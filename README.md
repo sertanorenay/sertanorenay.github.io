@@ -1,1 +1,1 @@
-# sertanorenay.github.io
+# Personal Website of Sertan Örenay
