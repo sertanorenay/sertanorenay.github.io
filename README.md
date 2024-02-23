@@ -1,1 +1,1 @@
-## Personal Website of Sertan Örenay
+### Sertan Örenay's personal website
