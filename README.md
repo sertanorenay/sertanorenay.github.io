@@ -1,1 +1,1 @@
-### Sertan Örenay's personal website
+### The personal repository serves as an archive for all homework, projects and in-class activities related to my Responsive Web Design course.
