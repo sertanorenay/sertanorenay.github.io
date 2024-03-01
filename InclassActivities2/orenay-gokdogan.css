@@ -27,9 +27,34 @@ th, td
 	vertical-align: middle;
 }
 
+.department {
+	font-weight: bold;
+}
 
+td.department[rowspan="2"] {
+	background-color: white;
+}
+
+td.department[rowspan="3"] {
+	background-color: white;
+}
 
 tbody tr:nth-child(even) td 
 {
 	background-color: yellow;
+}
+
+.total {
+	text-align: right;
+	font-weight: bold;
+}
+
+.right {
+    text-align: right;
+	font-weight: bold;
+}
+
+caption {
+	font-size: 35px;
+	font-weight: bold;
 }
