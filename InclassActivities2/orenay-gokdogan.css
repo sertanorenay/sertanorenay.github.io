@@ -12,6 +12,7 @@ table
 	border-collapse: collapse;
 	border: 1px solid black;
 	margin: 20px;
+	width: 94%;
 }
 
 thead 
@@ -55,6 +56,21 @@ tbody tr:nth-child(even) td
 }
 
 caption {
-	font-size: 35px;
+	font-size: 32px;
 	font-weight: bold;
+}
+
+div {
+	border: 2px solid black;
+}
+
+.container {
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 10%;
+	padding-left: 0%;
+}
+
+h2 {
+	font-size: 30px;
 }
