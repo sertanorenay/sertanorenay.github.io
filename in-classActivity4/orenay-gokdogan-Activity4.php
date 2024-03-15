@@ -22,11 +22,10 @@
             $value = $_GET['value_from'];
             $from = $_GET['currencies_from'];
             $to = $_GET['currencies_to'];
-    
-            $result = $value * $rates[$from] * $rates[$to];
+
+			$result = $value * $rates[$from] * $rates[$to];
         }
     ?>
-
 	<form action = "activity4.php" method="GET">
 		<table>
 			<tr>
@@ -74,10 +73,7 @@
 					<input type="submit" value="convert"/>
 				</td>	
 			</tr>
-		</table>
-		
+		</table>	
 	</form>		
 </body>
-
-
 </html>
