@@ -68,6 +68,4 @@ function addScore() {
   nameInput.value = "";
   scoreInput.value = "";
   nameInput.focus();
-
-  displayScores();
 }
