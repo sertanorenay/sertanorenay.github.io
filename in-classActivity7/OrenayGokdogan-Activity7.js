@@ -64,7 +64,6 @@ function addScore() {
   names.push(nameInput.value.trim());
   scores.push(score);
 
-
   nameInput.value = "";
   scoreInput.value = "";
   nameInput.focus();
