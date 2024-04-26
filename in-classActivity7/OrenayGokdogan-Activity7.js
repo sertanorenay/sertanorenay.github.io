@@ -30,7 +30,7 @@ function displayResults() {
 
 function displayScores() {
   var scoresTable = $("scores_table");
-  scoresTable.innerHTML = "<h2>Scores</h2>" + "<tr><th>Name</th><th>Score</th></tr>";
+  scoresTable.innerHTML = "<h2>Scores</h2>" + "<tr><td><b>Name</b></td> <td><b>Score</b></td></tr>";
 
   for (var i = 0; i < names.length; i++) {
     var row = document.createElement("tr");
