@@ -3,3 +3,7 @@ label {
     width: 200px;
     margin-bottom: 8px;
 }
+
+input:required:invalid {
+    border: 1px solid red;
+}
