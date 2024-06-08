@@ -9,113 +9,7 @@
       type="image/png"
       href="https://cdn0.iconfinder.com/data/icons/spring-color-4/48/Mushroom-256.png"
     />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Annapurna+SIL:wght@400;700&display=swap");
-
-      body {
-        font-size: 30px;
-        margin: 0;
-        padding: 0;
-        background-color: #f0f0f0;
-      }
-      body::after {
-        content: "";
-        background: url("https://cdn1.iconfinder.com/data/icons/message-and-spa-color-and-outline-design-beauty-ma/130/lotus-256.png");
-        background-repeat: no-repeat;
-        background-position: center;
-        opacity: 0.35;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        position: absolute;
-        z-index: -1;
-      }
-      h1 {
-        font-family: "Annapurna SIL", serif;
-        font-weight: 700;
-        font-style: normal;
-        color: #333;
-        text-align: center;
-        margin-top: 50px;
-        margin-bottom: 30px;
-      }
-      p {
-        font-family: "Annapurna SIL", serif;
-        font-weight: 400;
-        font-style: normal;
-        color: #666;
-        font-size: 24px;
-        line-height: 1.6;
-        max-width: 800px;
-        margin: 0 auto;
-        text-align: center;
-      }
-      * {
-        user-select: none;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-      }
-
-      .navbar {
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 250px;
-        background-color: #333;
-        transform: translateX(-250px);
-        transition: transform 0.3s ease-in-out;
-        z-index: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .navbar.open {
-        transform: translateX(0);
-      }
-
-      .navbar ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .navbar li {
-        text-align: center;
-        padding: 10px;
-      }
-
-      .navbar a {
-        display: block;
-        color: white;
-        text-decoration: none;
-        font-size: 24px;
-        transition: background-color 0.3s, color 0.3s;
-      }
-
-      .navbar a:hover {
-        background-color: #575757;
-        color: #fff;
-      }
-
-      .nav-tab {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 20px;
-        height: 100vh;
-        background-color: #333;
-        cursor: pointer;
-        z-index: 2;
-      }
-    </style>
+    <link rel="stylesheet" type="text/css" href="styles.css">
   </head>
   <body>
     <h1>Sertan Örenay</h1>
@@ -126,34 +20,13 @@
     </p>
     <nav class="navbar">
       <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="aboutme.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
     <div class="nav-tab"></div>
 
-    <script>
-      const navbar = document.querySelector(".navbar");
-      const navTab = document.querySelector(".nav-tab");
-
-      navTab.addEventListener("mouseover", () => {
-        navbar.classList.add("open");
-      });
-
-      document.addEventListener("mousemove", (event) => {
-        const isMouseOverNavbar =
-          event.clientX <= navbar.offsetLeft + navbar.offsetWidth;
-        const isMouseOverTab =
-          event.clientX <= navTab.offsetLeft + navTab.offsetWidth &&
-          event.clientY >= navTab.offsetTop &&
-          event.clientY <= navTab.offsetTop + navTab.offsetHeight;
-
-        if (!isMouseOverNavbar && !isMouseOverTab) {
-          navbar.classList.remove("open");
-        }
-      });
-    </script>
+    <script src="index.js"></script>
   </body>
 </html>

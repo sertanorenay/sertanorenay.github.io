@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Annapurna+SIL:wght@400;700&display=swap");
+
+body {
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+body::after {
+  content: "";
+  background: url("https://cdn1.iconfinder.com/data/icons/message-and-spa-color-and-outline-design-beauty-ma/130/lotus-256.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.35;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+h1 {
+  font-family: "Annapurna SIL", serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #333;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+p {
+  font-family: "Annapurna SIL", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #666;
+  font-size: 24px;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+* {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px;
+  background-color: #333;
+  transform: translateX(-250px);
+  transition: transform 0.3s ease-in-out;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar.open {
+  transform: translateX(0);
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar li {
+  text-align: center;
+  padding: 10px;
+}
+
+.navbar a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-tab {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 100vh;
+  background-color: #333;
+  cursor: pointer;
+  z-index: 2;
+}
+
+/*
+end of the index.html
+*/
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.links a {
+  margin: 10px 0;
+  text-decoration: none;
+}
+
+.links img {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s;
+}
+
+.links img:hover {
+  transform: scale(1.1);
+}
+
+.navbar {
+  margin-top: 20px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.navbar ul li {
+  margin: 10px 0;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+  color: #007bff;
+}
+
+a {
+  font-family: "Annapurna SIL", serif;
+  font-weight: 400;
+  font-style: normal;
+}
