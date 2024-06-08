@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -56,6 +57,64 @@
         -moz-user-select: none;
         -ms-user-select: none;
       }
+
+      .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 250px;
+        background-color: #333;
+        transform: translateX(-250px);
+        transition: transform 0.3s ease-in-out;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .navbar.open {
+        transform: translateX(0);
+      }
+
+      .navbar ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .navbar li {
+        text-align: center;
+        padding: 10px;
+      }
+
+      .navbar a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        font-size: 24px;
+        transition: background-color 0.3s, color 0.3s;
+      }
+
+      .navbar a:hover {
+        background-color: #575757;
+        color: #fff;
+      }
+
+      .nav-tab {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 20px;
+        height: 100vh;
+        background-color: #333;
+        cursor: pointer;
+        z-index: 2;
+      }
     </style>
   </head>
   <body>
@@ -65,5 +124,36 @@
       and creating efficient solutions. Interested in AI and design. Passionate
       about virtual arts and music.
     </p>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-tab"></div>
+
+    <script>
+      const navbar = document.querySelector(".navbar");
+      const navTab = document.querySelector(".nav-tab");
+
+      navTab.addEventListener("mouseover", () => {
+        navbar.classList.add("open");
+      });
+
+      document.addEventListener("mousemove", (event) => {
+        const isMouseOverNavbar =
+          event.clientX <= navbar.offsetLeft + navbar.offsetWidth;
+        const isMouseOverTab =
+          event.clientX <= navTab.offsetLeft + navTab.offsetWidth &&
+          event.clientY >= navTab.offsetTop &&
+          event.clientY <= navTab.offsetTop + navTab.offsetHeight;
+
+        if (!isMouseOverNavbar && !isMouseOverTab) {
+          navbar.classList.remove("open");
+        }
+      });
+    </script>
   </body>
 </html>
