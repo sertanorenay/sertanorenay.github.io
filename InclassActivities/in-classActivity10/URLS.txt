@@ -1,8 +1,8 @@
 ACCORDION
-https://sertanorenay.github.io/in-classActivity10/Activity10_Accordion/index.html
+https://sertanorenay.github.io/InclassActivities/in-classActivity10/Activity10_Accordion/index.html
 
 WIDGET
-https://sertanorenay.github.io/in-classActivity10/Activity10_Widget/index.html
+https://sertanorenay.github.io/InclassActivities/in-classActivity10/Activity10_Widget/index.html
 
 SLIDER
-https://sertanorenay.github.io/in-classActivity10/Activity10_Slider/index.html
+https://sertanorenay.github.io/InclassActivities/in-classActivity10/Activity10_Slider/index.html
