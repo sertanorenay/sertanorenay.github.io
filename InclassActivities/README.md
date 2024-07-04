@@ -1,0 +1,1 @@
+This folder contains the exercises of in class activities in CENG311 - Responsive Web Design course during the 2024 spring term at AYBU. The exercises were collaboratively completed by two students, including myself and [Zeynep](https://github.com/zeynepgokdogan).
